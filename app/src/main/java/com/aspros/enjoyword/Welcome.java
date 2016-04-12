@@ -40,6 +40,8 @@ public class Welcome extends Activity {
         if (!isFirstInit) {
             handler.sendEmptyMessageDelayed(MAIN_MESSAGE, DISPLAY_TIME);
         } else {
+            Intent intent=new Intent(this,LoadDataService.class);
+            startService(intent);
             handler.sendEmptyMessageDelayed(GUIDE_MESSAGE, DISPLAY_TIME);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("isFirstIn", false);
@@ -51,6 +53,8 @@ public class Welcome extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         init();
+
+
     }
 
     private void go_guide() {
