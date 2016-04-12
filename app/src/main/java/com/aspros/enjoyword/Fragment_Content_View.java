@@ -9,7 +9,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
@@ -18,7 +17,6 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Aspros on 16/3/31.
@@ -197,6 +195,7 @@ public class Fragment_Content_View extends Fragment {
             }
         });
 
+
         //设置SelectPicPopupWindow弹出窗体的背景
         pop.setBackgroundDrawable(new BitmapDrawable());
 
@@ -218,7 +217,7 @@ public class Fragment_Content_View extends Fragment {
                         break;
                     case R.id.buy_car:
                         pop.dismiss();
-                        Intent i=new Intent(view.getContext(),ConfimOrder.class);
+                        Intent i=new Intent(view.getContext(),Confirm_Order.class);
                         startActivity(i);
                         getActivity().overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
 //                        Toast.makeText(view.getContext(), "跳转购买页面", Toast.LENGTH_SHORT).show();
