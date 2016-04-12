@@ -17,9 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PopWindow" />
         <activity android:name=".Car_List" />
-        <activity android:name=".ConfimOrder"></activity>
+        <activity android:name=".Confirm_Order"/>
+        <activity android:name=".Address_Manager"/>
+        <service android:name=".LoadDataService"/>
     </application>
 
 </manifest>
