@@ -12,7 +12,7 @@
 
 
         <EditText
-            android:id="@+id/et_shouhuoren"
+            android:id="@+id/et_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -37,7 +37,7 @@
 
 
         <EditText
-            android:id="@+id/et_Mobile"
+            android:id="@+id/et_PhoneNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -63,7 +63,7 @@
 
 
         <EditText
-            android:id="@+id/et_youbian"
+            android:id="@+id/et_PostCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -98,23 +98,22 @@
 
             android:textSize="16sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
 
             <TextView
-                android:id="@+id/tv_city1"
+                android:id="@+id/tv_city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:textColor="@android:color/black"
-
                 android:padding="10dp"
                 android:textSize="16sp" />
 
-        </RelativeLayout>
+        <!--</RelativeLayout>-->
 
     </LinearLayout>
 
@@ -137,11 +136,10 @@
             android:padding="10dp"
             android:text="详细地址："
             android:textColor="@android:color/black"
-
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/et_xiangxidizhi"
+            android:id="@+id/et_DetailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -159,11 +157,11 @@
 
 
     <Button
-        android:id="@+id/btn_save"
+        android:id="@+id/btn_saveAddress"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_margin="5dp"
-        android:background="#00CD8C"
+        android:background="#E74C2F"
         android:text="确定"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
